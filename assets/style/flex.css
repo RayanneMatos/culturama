@@ -1,4 +1,4 @@
-/* cabeçalho */
+/* cabeçalho para celular */
 
 .menu {
     display: flex;
@@ -8,16 +8,85 @@
     column-gap: 33px;
 }
 
-@media (min-width: 720px) {
+/* categorias para celular*/
 
-    .menu{
-        column-gap: 75px;
-     }
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+/* Destaques para celular */
+
+.destaques {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.destaques__barra {
+    flex-grow: 1;
+}
+
+/* Eventos para celular */
+.eventos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px;
 
 }
 
-@media (min-width: 1440px) {
+/*Agenda ATIVIDADE PARA SABER MAIS */
 
+.agenda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+    justify-content: center;
+}
+
+.agenda__item {
+    flex-grow: 1;
+}
+
+@media (min-width: 720px) {
+/* cabeçalho para tablet */
+    .menu{
+        column-gap: 75px;
+        
+     }
+
+
+.categorias__lista {
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+}
+
+.eventos__lista {
+    justify-content: end;
+}
+
+ /*Agenda ATIVIDADE PARA SABER MAIS */
+
+ .agenda__lista {
+    justify-content: end;
+
+}
+
+}
+
+
+@media (min-width: 1440px) {
+/* cabeçalho para computador */
     .menu{
 
         column-gap: 105px;
